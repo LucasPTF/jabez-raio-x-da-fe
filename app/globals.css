@@ -123,9 +123,9 @@ blockquote span { position: absolute; top: -8px; left: 26px; color: var(--gold);
 .offer-list li { padding: 18px 20px; border-left: 3px solid var(--gold); background: white; color: #435452; }
 .price-card { position: sticky; top: 35px; padding: 42px; background: var(--petrol); color: var(--ivory); box-shadow: 0 28px 60px rgba(6,30,33,.18); }
 .price-card > p { color: var(--gold-light); text-transform: uppercase; letter-spacing: .12em; font-size: .72rem; }
-.price { display: flex; align-items: flex-start; gap: 6px; margin: 18px 0 2px; }
+.price { display: flex; align-items: flex-start; gap: 8px; margin: 18px 0 8px; }
 .price small { color: var(--gold-light); font-weight: 700; margin-top: 15px; }
-.price strong { font: 500 5.8rem/.9 Georgia, serif; }
+.price strong { font: 500 5.8rem/1 Georgia, serif; }
 .price-card > span { display: block; color: #acbfba; margin-bottom: 26px; }
 .price-card .button { width: 100%; }
 .price-card ul { margin: 30px 0; padding: 24px 0; list-style: none; border-block: 1px solid rgba(244,238,223,.16); }
@@ -135,9 +135,9 @@ blockquote span { position: absolute; top: -8px; left: 26px; color: var(--gold);
 
 .guarantee-section { padding: 0 0 110px; background: var(--paper); }
 .guarantee-card { display: grid; grid-template-columns: 160px 1fr; gap: 42px; align-items: center; padding: 50px; background: var(--ivory); border: 1px solid #e4dac5; }
-.guarantee-badge { width: 135px; height: 135px; display: grid; place-content: center; text-align: center; border: 1px solid var(--gold); border-radius: 50%; color: var(--petrol); }
-.guarantee-badge strong { font: 500 3.7rem/.8 Georgia, serif; }
-.guarantee-badge span { color: var(--terracotta); font-size: .72rem; text-transform: uppercase; letter-spacing: .15em; }
+.guarantee-badge { width: 135px; height: 135px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; text-align: center; border: 1px solid var(--gold); border-radius: 50%; color: var(--petrol); }
+.guarantee-badge strong { display: block; font: 500 3.7rem/.82 Georgia, serif; }
+.guarantee-badge span { display: block; color: var(--terracotta); font-size: .72rem; line-height: 1; text-transform: uppercase; letter-spacing: .15em; }
 .guarantee-card h2 { font-size: 2.7rem; margin-bottom: 10px; }
 .guarantee-card p:last-child { color: var(--muted); margin: 0; }
 

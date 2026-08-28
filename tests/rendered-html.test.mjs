@@ -23,9 +23,9 @@ function render(pathname) {
 }
 
 const variants = [
-  ["/a1", "continua voltando ao mesmo lugar?", "Quero descobrir onde estou travado"],
-  ["/a2", "precisa de atenção primeiro.", "Quero fazer meu Raio-X"],
-  ["/a3", "uma resposta genérica.", "Quero descobrir meu ponto de atenção"],
+  ["/a1", "Mas o que sente ainda não acompanha o que acredita.", "Quero definir por onde começar"],
+  ["/a2", "use 21 perguntas para localizar onde começar.", "Quero fazer meu Raio-X"],
+  ["/a3", "Encontre a área que pede atenção primeiro.", "Quero encontrar minha prioridade"],
 ];
 
 for (const [pathname, headline, cta] of variants) {
@@ -37,7 +37,9 @@ for (const [pathname, headline, cta] of variants) {
     const html = await response.text();
     assert.match(html, new RegExp(headline.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"));
     assert.match(html, new RegExp(cta.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"));
+    assert.match(html, /<h1[^>]*>.*?<\/h1>.*?<h2[^>]*class="hero-subtitle"/is);
     assert.match(html, /Diagnóstico D7E com 21 perguntas/i);
+    assert.match(html, /workshop ao vivo/i);
     assert.match(html, /https:\/\/pay\.kiwify\.com\.br\/JcPYHLN/i);
     assert.match(html, /Jabez de Castro/i);
     assert.match(html, /Garantia de 7 dias/i);

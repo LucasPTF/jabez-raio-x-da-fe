@@ -1,34 +1,34 @@
 export type HeroContent = {
   eyebrow: string;
   title: string;
-  highlight: string;
+  subtitle: string;
   support: string;
   cta: string;
 };
 
 export const heroes: Record<"a1" | "a2" | "a3", HeroContent> = {
   a1: {
-    eyebrow: "VOCÊ ORA. SERVE. TENTA. E O PESO VOLTA.",
-    title: "Você faz tudo certo na fé. Então por que",
-    highlight: "continua voltando ao mesmo lugar?",
+    eyebrow: "PARA QUEM SEGUE FIRME, MAS SENTE QUE ALGO NÃO MUDA",
+    title: "Você continua buscando.",
+    subtitle: "Mas o que sente ainda não acompanha o que acredita.",
     support:
-      "Você já orou, estudou, serviu e tentou de novo. Talvez não tenha faltado fé ou esforço, mas direção. Em até 90 minutos, o D7E usa 21 perguntas para localizar qual dos 7 E's merece atenção primeiro e mostra por onde começar nos próximos 7 dias.",
-    cta: "Quero descobrir onde estou travado",
+      "No workshop ao vivo, você percorre 21 perguntas, organiza 7 áreas da vida cristã e define uma prioridade com uma prática para os próximos 7 dias, sem precisar se expor.",
+    cta: "Quero definir por onde começar",
   },
   a2: {
-    eyebrow: "CLAREZA ANTES DE MAIS CONTEÚDO",
-    title: "Em até 90 minutos, descubra qual dos 7 E's",
-    highlight: "precisa de atenção primeiro.",
+    eyebrow: "CLAREZA ANTES DE MAIS UMA TENTATIVA",
+    title: "Antes de tentar de novo,",
+    subtitle: "use 21 perguntas para localizar onde começar.",
     support:
-      "Responda 21 perguntas, identifique qual dos 7 E's merece foco agora e saia com um exercício prático para começar ainda esta semana — sem tentar resolver tudo ao mesmo tempo e sem adivinhar por onde começar.",
+      "Em até 90 minutos, você percorre 7 áreas da vida cristã, define 1 prioridade e associa a ela uma prática para os próximos 7 dias.",
     cta: "Quero fazer meu Raio-X",
   },
   a3: {
-    eyebrow: "ANTES DA RESPOSTA, VEM O DIAGNÓSTICO",
-    title: "Jesus não respondia todo mundo do mesmo jeito. Seu travamento também não pede",
-    highlight: "uma resposta genérica.",
+    eyebrow: "MESMA SENSAÇÃO. PRIORIDADES DIFERENTES.",
+    title: "Nem todo bloqueio vem do mesmo lugar.",
+    subtitle: "Encontre a área que pede atenção primeiro.",
     support:
-      "Você já ouviu conselhos valiosos. O que talvez tenha faltado foi descobrir qual serve para o ponto em que você está. Em até 90 minutos, o D7E usa 21 perguntas para localizar seu principal gargalo e indicar o primeiro passo para os próximos 7 dias.",
-    cta: "Quero descobrir meu ponto de atenção",
+      "O D7E ajuda você a separar o que hoje parece tudo misturado. Com 21 perguntas, você organiza suas respostas entre os 7 E's e sai com uma prioridade e uma prática relacionada a ela.",
+    cta: "Quero encontrar minha prioridade",
   },
 };

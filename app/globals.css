@@ -44,7 +44,7 @@ h3 { line-height: 1.2; }
 .hero-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1.05fr .95fr; gap: 75px; align-items: center; }
 .eyebrow { color: var(--gold-light); display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
 .eyebrow i { width: 34px; height: 1px; background: var(--gold); }
-.hero h1 { max-width: 690px; font-size: clamp(3.45rem, 6vw, 6.4rem); margin-bottom: 28px; }
+.hero h1 { max-width: 720px; font-size: clamp(3.2rem, 5vw, 5.25rem); margin-bottom: 28px; text-wrap: balance; }
 .hero h1 em { color: var(--gold-light); font-weight: 400; }
 .hero-lead { max-width: 650px; color: #cbd6d2; font-size: 1.14rem; line-height: 1.75; margin-bottom: 34px; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 22px; padding: 18px 24px; border-radius: 4px; background: var(--terracotta); color: white; font-weight: 800; font-size: .87rem; letter-spacing: .035em; box-shadow: 0 12px 30px rgba(183,93,69,.22); transition: transform .2s, background .2s; }

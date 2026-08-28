@@ -51,3 +51,14 @@ test("the main URL sends visitors to the strongest hero", async () => {
   assert.ok([307, 308].includes(response.status));
   assert.equal(new URL(response.headers.get("location"), "http://localhost").pathname, "/a1");
 });
+
+test("the thank-you page explains the next steps after purchase", async () => {
+  const response = await render("/obrigado");
+  assert.equal(response.status, 200);
+
+  const html = await response.text();
+  assert.match(html, /Seu Raio-X da Fé já começou/i);
+  assert.match(html, /data, o horário e o link do encontro/i);
+  assert.match(html, /Você não precisa realizar uma nova compra/i);
+  assert.match(html, /Guarde o comprovante enviado pela Kiwify/i);
+});

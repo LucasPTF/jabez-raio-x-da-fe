@@ -66,7 +66,7 @@ export function SalesPage({ hero }: { hero: HeroContent }) {
             <div className="micro-proof"><span>Ao vivo, até 90 min</span><i /><span>21 perguntas</span><i /><span>Garantia de 7 dias</span></div>
           </div>
           <figure className="hero-visual">
-            <div className="visual-frame"><img src="/jabez-headline.png" alt="Jabez de Castro, criador do Método 7E" width="1086" height="1448" /></div>
+            <div className="visual-frame"><img src="/jabez-headline-real.png" alt="Jabez de Castro, criador do Método 7E" width="1003" height="1568" /></div>
             <figcaption><span>Antes de tentar de novo,</span><strong>faça o Raio-X.</strong></figcaption>
           </figure>
         </div>
@@ -141,7 +141,7 @@ export function SalesPage({ hero }: { hero: HeroContent }) {
       <section className="section about-section">
         <div className="container about-grid">
           <figure className="about-photo">
-            <img src="/jabez-apresentacao.png" alt="Retrato de apresentação de Jabez de Castro" width="1104" height="1400" />
+            <img src="/jabez-apresentacao-real.png" alt="Retrato de apresentação de Jabez de Castro" width="1122" height="1402" />
             <figcaption><strong>Jabez de Castro</strong><span>Pastor, autor e criador do Método 7E</span></figcaption>
           </figure>
           <div className="about-copy">
